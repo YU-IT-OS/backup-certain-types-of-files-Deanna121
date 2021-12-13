@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Does it pring a usage statement when run without arguments?",
+      "setup": "",
+      "run": "bash final.sh",
+      "input": "",
+      "output": "Usage",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test One: backing up files",
+      "setup": "touch test1.test; touch test2.test; bash final.sh .test . /tmp ",
+      "run": "ls /tmp",
+      "input": "",
+      "output": "test1.test",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 40
+    },
+    {
+      "name": "Test Two: backing up files",
+      "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 . /tmp ",
+      "run": "ls /tmp",
+      "input": "",
+      "output": ".mp3",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 40
+    }
+  ]
+}
