@@ -22,8 +22,6 @@ if [ ! -d "$targetDir" ]
 then
         echo "$targetDir" 
         exit 0;
-if
+fi
 
-find $targetDir" -name *$fileExtention -exec cp {} $destinationDir \;
-then
-        exit 0;
+find $targetDir" -name *$fileExtention -exec cp [] $destinationDir \; 
