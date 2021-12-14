@@ -23,10 +23,8 @@ echo "backup directory is: "$destinationDir"
 if [ ! -d "$targetDir" ]
 
 then
-        echo "$targetDir" ]
+        echo "$targetDir" 
         exit 0;
 fi
 
-
-
-find $targetDir  -name *$fileExtention -exec cp {} $destinationDir \;
+find $targetDir -name *$fileExtention -exec cp {} $destinationDir \;
