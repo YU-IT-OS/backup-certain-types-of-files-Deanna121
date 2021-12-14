@@ -17,10 +17,6 @@ echo "file extention is: "$fileExtention"
 echo "target dir is: "$targetDir"
 echo "backup directory is: "$destinationDir" 
 
-lsof | grep "$fileExtention"
-lsof | grep "$targetDir"
-lsof | grep "$destinationDir"
-
 if [ ! -d "$targetDir" ]
 
 then
@@ -28,5 +24,5 @@ then
         exit 0;
 fi
 
-find $targetDir -name *$fileExtention -exec cp {} $destinationDir \;
+find "$targetDir" -name *"$fileExtention" -exec cp {} "$destinationDir" \;
 
