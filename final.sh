@@ -1,12 +1,11 @@
 #!/bin/bash
 
-
 if [ -z $3 ]
 then
         echo "Usage: script [file extension] [target directory] [backup directory] 
         Example: script .text /home/arnold /backup 
-        this is backs up files from a certain directory to anohter 
-        "
+        this is backs up files from a certain directory to anohter"
+        
 exit 0;
 fi
 
