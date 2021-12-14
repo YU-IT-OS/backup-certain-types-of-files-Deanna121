@@ -15,7 +15,7 @@ destinationDir="$3"
 
 echo "file extention is: "$fileExtention"
 echo "target dir is: "$targetDir"
-echo "backup directory is: "$destinationDir" 
+echo "backup directory is: "$backupDir" 
 
 
 
