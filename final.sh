@@ -17,11 +17,13 @@ echo "file extention is: $fileExtention"
 echo "target dir is: $targetDir"
 echo "backup directory is: $destinationDir"
 
-if [ ! -t "$targetDir" ]
+if [ ! -d "$targetDir" ]
 
 then
         echo "$targetDir" 
         exit 0;
-fi
+if
 
 find $targetDir" -name *$fileExtention -exec cp {} $destinationDir \;
+then
+        exit 0;
