@@ -26,4 +26,4 @@ fi
 
 find "$targetDir" -name *"$fileExtention" -exec cp {} "$destinationDir" \;
 
-backup [-exec] target-directory suffix-list
+backup [-t] $fileExtention $targetDir $destinationDir
