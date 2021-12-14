@@ -24,5 +24,4 @@ then
         exit 0;
 fi
 
-find $targetDir" -name *$fileExtention" -exec cp {} $destinationDir" \;
 find "$fileExtention" -name *"$targetDir" -exec cp {} "$destinationDir" \;
