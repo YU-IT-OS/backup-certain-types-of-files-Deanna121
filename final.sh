@@ -9,15 +9,15 @@ then
 exit 0;
 fi
 
-fileExtention=$1
-targetDir=$2
-destinationDir=$3
+fileExtention="$1"
+targetDir="$2"
+destinationDir="$3"
 
 echo "file extention is: $fileExtention"
 echo "target dir is: $targetDir"
 echo "backup directory is: $destinationDir"
 
-if [ ! -d "$targetDir" ]
+if [ ! -t "$targetDir" ]
 
 then
         echo "$targetDir" 
